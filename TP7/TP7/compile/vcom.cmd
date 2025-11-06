@@ -1,0 +1,1 @@
+-w -d d:/My_Designs/TP7/TP7/compile -s d:/My_Designs/TP7/library.cfg -j d:/My_Designs/TP7/TP7/projlib.cfg -work TP7 -reorder -O3 -e 100 -work TP7 -2002 d:/My_Designs/TP7/TP7/src/Controller.vhd d:/My_Designs/TP7/TP7/src/Test_Controller.vhd 

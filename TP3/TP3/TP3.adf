@@ -1,0 +1,31 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=TP3
+[Library]
+TP3=.\TP3\TP3.lib
+[$LibMap$]
+TP3=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=D:\My_Designs\TP2\TP2\src
+[Files.Data]
+.\src\DFF.vhd=VHDL Source Code
+.\src\Latch8.vhd=VHDL Source Code
+.\src\Test_Latch8.vhd=VHDL Source Code
+[Files]
+/DFF.vhd=-1
+/Latch8.vhd=-1
+/Test_Latch8.vhd=-1
+[HierarchyViewer]
+HierarchyInformation=test_latch8|driver|0
+ShowHide=ShowTopLevel
+Selected=

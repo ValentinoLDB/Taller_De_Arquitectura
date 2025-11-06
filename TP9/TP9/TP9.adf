@@ -1,0 +1,39 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=TP9
+[Library]
+TP9=.\TP9\TP9.lib
+[$LibMap$]
+TP9=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=D:\My_Designs\TP8\TP8\src
+[Files]
+/Controller.vhd=-1
+/ShiftN.vhd=-1
+/Adder8.vhd=-1
+/fulladder.vhd=-1
+/Utils.vhd=-1
+/Multiplicador.vhd=-1
+/Test_Multiplicador.vhd=-1
+[Files.Data]
+.\src\Controller.vhd=VHDL Source Code
+.\src\ShiftN.vhd=VHDL Source Code
+.\src\Adder8.vhd=VHDL Source Code
+.\src\fulladder.vhd=VHDL Source Code
+.\src\Utils.vhd=VHDL Source Code
+.\src\Multiplicador.vhd=VHDL Source Code
+.\src\Test_Multiplicador.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=test_multiplicador|driver|0
+ShowHide=ShowTopLevel
+Selected=

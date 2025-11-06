@@ -1,0 +1,11 @@
+[Version]
+Version=15.0
+[Designs]
+tp9=.\TP9\TP9.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+[Expand]
+tp9=1

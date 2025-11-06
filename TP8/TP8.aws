@@ -1,0 +1,11 @@
+[Version]
+Version=15.0
+[Designs]
+tp8=.\TP8\TP8.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+[Expand]
+tp8=1

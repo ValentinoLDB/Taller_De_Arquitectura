@@ -1,0 +1,30 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=TP2
+[Library]
+TP2=.\TP2\TP2.lib
+[$LibMap$]
+TP2=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files.Data]
+.\src\DFF.vhd=VHDL Source Code
+.\src\Test_DFFA.vhd=VHDL Source Code
+.\src\Test_DFFB.vhd=VHDL Source Code
+[Files]
+/DFF.vhd=-1
+/Test_DFFA.vhd=-1
+/Test_DFFB.vhd=-1
+[HierarchyViewer]
+HierarchyInformation=test_dffb|driver|0
+ShowHide=ShowTopLevel
+Selected=

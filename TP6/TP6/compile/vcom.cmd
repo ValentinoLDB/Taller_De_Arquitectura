@@ -1,0 +1,1 @@
+-w -d d:/My_Designs/TP6/TP6/compile -s d:/My_Designs/TP6/library.cfg -j d:/My_Designs/TP6/TP6/projlib.cfg -work TP6 -O3 -e 100 -work TP6 -2002 d:/My_Designs/TP6/TP6/src/Test_ShiiftN_B.vhd 

@@ -1,0 +1,1 @@
+-w -d d:/My_Designs/TP1/TP1/compile -s d:/My_Designs/TP1/library.cfg -j d:/My_Designs/TP1/TP1/projlib.cfg -work TP1 -O3 -e 100 -work TP1 -2002 d:/My_Designs/TP1/TP1/src/simple2.vhd 

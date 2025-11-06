@@ -1,0 +1,369 @@
+# Design: Design TP6 already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0674: ShiftN.vhd : (13, 16): String literal contains a character that is not of type std.standard.character.
+# Error: COMP96_0086: ShiftN.vhd : (13, 16): String expected.
+# Error: COMP96_0056: ShiftN.vhd : (17, 1): Cannot find referenced entity declaration "ShiftN".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -reorder -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0674: ShiftN.vhd : (13, 16): String literal contains a character that is not of type std.standard.character.
+# Error: COMP96_0086: ShiftN.vhd : (13, 16): String expected.
+# Error: COMP96_0056: ShiftN.vhd : (17, 1): Cannot find referenced entity declaration "ShiftN".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -reorder -O3 -e 100 -work TP6 -2002  $dsn/src/Test_ShiftN.vhd
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Top-level unit(s) detected:
+# Entity => Test_ShiftN
+# Warning: ELAB1_0026: Test_ShiftN.vhd : (23, 0): There is no default binding for component "ShiftN". (No entity named "ShiftN" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/Test_ShiftN.vhd
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Warning: ELAB1_0026: Test_ShiftN.vhd : (23, 0): There is no default binding for component "ShiftN". (No entity named "ShiftN" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd
+# Error: COMP96_0674: ShiftN.vhd : (13, 16): String literal contains a character that is not of type std.standard.character.
+# Compile Entity "ShiftN"
+# Error: COMP96_0086: ShiftN.vhd : (13, 16): String expected.
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0056: ShiftN.vhd : (17, 1): Cannot find referenced entity declaration "ShiftN".
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Warning: ELAB1_0026: Test_ShiftN.vhd : (23, 0): There is no default binding for component "ShiftN". (No entity named "ShiftN" was found).
+# Compile failure 3 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Error: COMP96_0674: ShiftN.vhd : (13, 16): String literal contains a character that is not of type std.standard.character.
+# Compile Entity "ShiftN"
+# Error: COMP96_0086: ShiftN.vhd : (13, 16): String expected.
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0056: ShiftN.vhd : (17, 1): Cannot find referenced entity declaration "ShiftN".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Error: COMP96_0674: ShiftN.vhd : (11, 10): String literal contains a character that is not of type std.standard.character.
+# Compile Entity "ShiftN"
+# Error: COMP96_0086: ShiftN.vhd : (11, 10): String expected.
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0056: ShiftN.vhd : (14, 1): Cannot find referenced entity declaration "ShiftN".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Error: COMP96_0674: ShiftN.vhd : (12, 16): String literal contains a character that is not of type std.standard.character.
+# Compile Entity "ShiftN"
+# Error: COMP96_0086: ShiftN.vhd : (12, 16): String expected.
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0056: ShiftN.vhd : (16, 1): Cannot find referenced entity declaration "ShiftN".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Error: COMP96_0674: ShiftN.vhd : (17, 16): String literal contains a character that is not of type std.standard.character.
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0086: ShiftN.vhd : (17, 16): String expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Error: COMP96_0674: ShiftN.vhd : (15, 16): String literal contains a character that is not of type std.standard.character.
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0086: ShiftN.vhd : (15, 16): String expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0029: ShiftN.vhd : (15, 16): Expression expected.
+# Error: COMP96_0015: ShiftN.vhd : (15, 16): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0029: ShiftN.vhd : (15, 16): Expression expected.
+# Error: COMP96_0015: ShiftN.vhd : (15, 16): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Warning: COMP96_0994: Test_ShiftN.vhd : (4, 1): Multiple architecture "Driver" of entity "Test_ShiftN" found in "d:/My_Designs/TP6/TP6/src/Test_ShiftN.vhd", "d:/My_Designs/TP6/TP6/src/ShiftN.vhd".
+# Compile success 0 Errors 1 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Warning: COMP96_0994: Test_ShiftN.vhd : (3, 1): Multiple architecture "Driver" of entity "Test_ShiftN" found in "d:/My_Designs/TP6/TP6/src/Test_ShiftN.vhd", "d:/My_Designs/TP6/TP6/src/ShiftN.vhd".
+# Compile success 0 Errors 1 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Error: COMP96_0674: ShiftN.vhd : (15, 16): String literal contains a character that is not of type std.standard.character.
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Error: COMP96_0086: ShiftN.vhd : (15, 16): String expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+test_shiftn test_shiftn driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5372 kB (elbread=427 elab2=4810 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP6\TP6\src\wave.asdb
+#  1:01, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# add wave -noreg {/Test_ShiftN/CLK}
+# add wave -noreg {/Test_ShiftN/CLR}
+# add wave -noreg {/Test_ShiftN/LD}
+# add wave -noreg {/Test_ShiftN/SH}
+# add wave -noreg {/Test_ShiftN/DIR}
+# add wave -noreg {/Test_ShiftN/D}
+# add wave -noreg {/Test_ShiftN/Q}
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP6/TP6/src/wave.asdb'.
+run 200 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Error: COMP96_0367: Test_ShiftN.vhd : (18, 9): Improper array length (4). Expected length is 10.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+test_shiftn test_shiftn driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5499 kB (elbread=427 elab2=4938 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP6\TP6\src\wave.asdb
+#  1:15, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# add wave -noreg {/Test_ShiftN/CLK}
+# add wave -noreg {/Test_ShiftN/CLR}
+# add wave -noreg {/Test_ShiftN/LD}
+# add wave -noreg {/Test_ShiftN/SH}
+# add wave -noreg {/Test_ShiftN/DIR}
+# add wave -noreg {/Test_ShiftN/D}
+# add wave -noreg {/Test_ShiftN/Q}
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP6/TP6/src/wave.asdb'.
+run 200 ns
+# EXECUTION:: FAILURE: Entrada D no debe ser mas 'ancha' que la salida Q
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /Test_ShiftN/UUT,  Process: line__11.
+# KERNEL: Stopped at time 0 ps + 0.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/Test_ShiiftN_B.vhd
+# Compile Entity "Test_ShiftN_B"
+# Compile Architecture "Driver_B" of Entity "Test_ShiftN_B"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/Test_ShiiftN_B.vhd
+# Compile Entity "Test_ShiftN_B"
+# Compile Architecture "Driver_B" of Entity "Test_ShiftN_B"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd $dsn/src/Test_ShiiftN_B.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Compile Entity "Test_ShiftN_B"
+# Compile Architecture "Driver_B" of Entity "Test_ShiftN_B"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/Test_ShiiftN_B.vhd
+# Compile Entity "Test_ShiftN_B"
+# Compile Architecture "Driver_B" of Entity "Test_ShiftN_B"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/ShiftN.vhd $dsn/src/Test_ShiftN.vhd $dsn/src/Test_ShiiftN_B.vhd
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Test_ShiftN"
+# Compile Architecture "Driver" of Entity "Test_ShiftN"
+# Compile Entity "Test_ShiftN_B"
+# Compile Architecture "Driver_B" of Entity "Test_ShiftN_B"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+test_shiftn_b test_shiftn_b driver_b
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5372 kB (elbread=427 elab2=4810 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP6\TP6\src\wave.asdb
+#  1:23, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# add wave -noreg {/Test_ShiftN_B/CLK}
+# add wave -noreg {/Test_ShiftN_B/CLR}
+# add wave -noreg {/Test_ShiftN_B/LD}
+# add wave -noreg {/Test_ShiftN_B/SH}
+# add wave -noreg {/Test_ShiftN_B/DIR}
+# add wave -noreg {/Test_ShiftN_B/D_in}
+# add wave -noreg {/Test_ShiftN_B/Q_out}
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP6/TP6/src/wave.asdb'.
+run 200 ns
+# KERNEL: stopped at time: 200 ns
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work TP6 -2002  $dsn/src/Test_ShiiftN_B.vhd
+# Compile Entity "Test_ShiftN_B"
+# Compile Architecture "Driver_B" of Entity "Test_ShiftN_B"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+test_shiftn_b test_shiftn_b driver_b
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5372 kB (elbread=427 elab2=4810 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP6\TP6\src\wave.asdb
+#  1:25, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# add wave -noreg {/Test_ShiftN_B/CLK}
+# add wave -noreg {/Test_ShiftN_B/CLR}
+# add wave -noreg {/Test_ShiftN_B/LD}
+# add wave -noreg {/Test_ShiftN_B/SH}
+# add wave -noreg {/Test_ShiftN_B/DIR}
+# add wave -noreg {/Test_ShiftN_B/D_in}
+# add wave -noreg {/Test_ShiftN_B/Q_out}
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP6/TP6/src/wave.asdb'.
+run 200 ns
+# KERNEL: stopped at time: 200 ns

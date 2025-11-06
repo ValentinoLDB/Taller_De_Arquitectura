@@ -1,0 +1,1 @@
+-w -d d:/My_Designs/TP3/TP3/compile -s d:/My_Designs/TP3/library.cfg -j d:/My_Designs/TP3/TP3/projlib.cfg -work TP3 -O3 -e 100 -work TP3 -2002 d:/My_Designs/TP3/TP3/src/Test_Latch8.vhd 

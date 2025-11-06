@@ -1,0 +1,7 @@
+i<>.\src\Controller.vhd
+i<>.\src\ShiftN.vhd
+i<>.\src\Adder8.vhd
+i<>.\src\fulladder.vhd
+i<>.\src\Utils.vhd
+i<>.\src\Multiplicador.vhd
+i<>.\src\Test_Multiplicador.vhd

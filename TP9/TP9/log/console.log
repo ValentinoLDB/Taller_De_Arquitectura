@@ -1,0 +1,429 @@
+# Design: Design TP9 already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work TP9 -2002  $dsn/src/Controller.vhd $dsn/src/ShiftN.vhd $dsn/src/Adder8.vhd $dsn/src/fulladder.vhd $dsn/src/Utils.vhd
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Controller
+# Entity => ShiftN
+# Entity => Adder8
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Controller.vhd $dsn/src/ShiftN.vhd $dsn/src/Adder8.vhd $dsn/src/fulladder.vhd $dsn/src/Utils.vhd
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Controller.vhd $dsn/src/ShiftN.vhd $dsn/src/Adder8.vhd $dsn/src/fulladder.vhd $dsn/src/Utils.vhd
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Controller.vhd $dsn/src/ShiftN.vhd $dsn/src/Adder8.vhd $dsn/src/fulladder.vhd $dsn/src/Utils.vhd $dsn/src/Multiplicador.vhd
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Compile Entity "Multiplicador"
+# Compile Architecture "Estructural" of Entity "Multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Multiplicador.vhd
+# Compile Entity "Multiplicador"
+# Compile Architecture "Estructural" of Entity "Multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Controller.vhd $dsn/src/ShiftN.vhd $dsn/src/Adder8.vhd $dsn/src/fulladder.vhd $dsn/src/Utils.vhd $dsn/src/Multiplicador.vhd
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Compile Entity "Multiplicador"
+# Compile Architecture "Estructural" of Entity "Multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Test_Multiplicador.vhd
+# Compile Entity "Test_Multiplicador"
+# Compile Architecture "Driver" of Entity "Test_Multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Controller.vhd $dsn/src/ShiftN.vhd $dsn/src/Adder8.vhd $dsn/src/fulladder.vhd $dsn/src/Utils.vhd $dsn/src/Multiplicador.vhd $dsn/src/Test_Multiplicador.vhd
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Compile Entity "Multiplicador"
+# Compile Architecture "Estructural" of Entity "Multiplicador"
+# Compile Entity "Test_Multiplicador"
+# Compile Architecture "Driver" of Entity "Test_Multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Controller.vhd $dsn/src/ShiftN.vhd $dsn/src/Adder8.vhd $dsn/src/fulladder.vhd $dsn/src/Utils.vhd $dsn/src/Multiplicador.vhd $dsn/src/Test_Multiplicador.vhd
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Compile Entity "Multiplicador"
+# Compile Architecture "Estructural" of Entity "Multiplicador"
+# Compile Entity "Test_Multiplicador"
+# Compile Architecture "Driver" of Entity "Test_Multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Test_Multiplicador.vhd
+# Compile Entity "Test_Multiplicador"
+# Compile Architecture "Driver" of Entity "Test_Multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6410 kB (elbread=427 elab2=5847 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP9\TP9\src\wave.asdb
+#  20:03, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# add wave -noreg {/Test_Multiplicador/s_A}
+# add wave -noreg {/Test_Multiplicador/s_B}
+# add wave -noreg {/Test_Multiplicador/s_STB}
+# add wave -noreg {/Test_Multiplicador/s_CLK}
+# add wave -noreg {/Test_Multiplicador/s_Result}
+# add wave -noreg {/Test_Multiplicador/s_Done}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP9/TP9/src/wave.asdb'.
+run 500 ns
+# KERNEL: stopped at time: 500 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6410 kB (elbread=427 elab2=5847 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP9\TP9\src\wave.asdb
+#  20:07, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP9/TP9/src/wave.asdb'.
+run 200 ns
+# KERNEL: stopped at time: 200 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6410 kB (elbread=427 elab2=5847 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP9\TP9\src\wave.asdb
+#  20:07, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP9/TP9/src/wave.asdb'.
+run 300 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6410 kB (elbread=427 elab2=5847 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP9\TP9\src\wave.asdb
+#  20:16, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP9/TP9/src/wave.asdb'.
+run 500 ns
+# KERNEL: stopped at time: 500 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6410 kB (elbread=427 elab2=5847 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP9\TP9\src\wave.asdb
+#  20:16, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP9/TP9/src/wave.asdb'.
+run 400 ns
+# KERNEL: stopped at time: 400 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6410 kB (elbread=427 elab2=5847 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP9\TP9\src\wave.asdb
+#  20:17, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP9/TP9/src/wave.asdb'.
+run 300 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6410 kB (elbread=427 elab2=5847 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP9\TP9\src\wave.asdb
+#  20:19, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP9/TP9/src/wave.asdb'.
+run 300 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work TP9 -2002  $dsn/src/Controller.vhd $dsn/src/ShiftN.vhd $dsn/src/Adder8.vhd $dsn/src/fulladder.vhd $dsn/src/Utils.vhd $dsn/src/Multiplicador.vhd $dsn/src/Test_Multiplicador.vhd
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Compile Entity "Multiplicador"
+# Compile Architecture "Estructural" of Entity "Multiplicador"
+# Compile Entity "Test_Multiplicador"
+# Compile Architecture "Driver" of Entity "Test_Multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6410 kB (elbread=427 elab2=5847 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP9\TP9\src\wave.asdb
+#  20:28, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# add wave -noreg {/Test_Multiplicador/s_A}
+# add wave -noreg {/Test_Multiplicador/s_B}
+# add wave -noreg {/Test_Multiplicador/s_STB}
+# add wave -noreg {/Test_Multiplicador/s_CLK}
+# add wave -noreg {/Test_Multiplicador/s_Result}
+# add wave -noreg {/Test_Multiplicador/s_Done}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP9/TP9/src/wave.asdb'.
+run 300 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6410 kB (elbread=427 elab2=5847 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\TP9\TP9\src\wave.asdb
+#  20:43, martes, 4 de noviembre de 2025
+#  Simulation has been initialized
+# add wave -noreg {/Test_Multiplicador/s_A}
+# add wave -noreg {/Test_Multiplicador/s_B}
+# add wave -noreg {/Test_Multiplicador/s_STB}
+# add wave -noreg {/Test_Multiplicador/s_CLK}
+# add wave -noreg {/Test_Multiplicador/s_Result}
+# add wave -noreg {/Test_Multiplicador/s_Done}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/TP9/TP9/src/wave.asdb'.
+run 300 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.

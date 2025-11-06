@@ -1,0 +1,36 @@
+Active-HDL 15.0.261.9132 2025-11-04 20:43:44
+
+Elaboration top modules:
+Architecture                  Driver(Test_Multiplicador)
+
+
+-----------------------------------------------------------------------------------------------------
+Entity             | Architecture | Library | Info | Compiler Version          | Compilation Options
+-----------------------------------------------------------------------------------------------------
+Test_Multiplicador | Driver       | TP9     |      | 15.0.261.9132 (Windows64) | -O3
+Multiplicador      | Estructural  | TP9     |      | 15.0.261.9132 (Windows64) | -O3
+Controller         | FSM          | TP9     |      | 15.0.261.9132 (Windows64) | -O3
+ShiftN             | Behavior     | TP9     |      | 15.0.261.9132 (Windows64) | -O3
+Adder8             | Estructura   | TP9     |      | 15.0.261.9132 (Windows64) | -O3
+fulladder          | ecuacion     | TP9     |      | 15.0.261.9132 (Windows64) | -O3
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+VHDL Package                      | Library | Info | Compiler Version          | Compilation Options
+-----------------------------------------------------------------------------------------------------
+standard                          | std     |      |                           | <unavailable>
+Utils                             | TP9     |      | 15.0.261.9132 (Windows64) | -O3
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+Library                           | Comment
+-----------------------------------------------------------------------------------------------------
+std                               | Standard VHDL library
+TP9                               | None
+-----------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+test_multiplicador test_multiplicador driver
+
+
+The performance of simulation is reduced. Version Student Edition

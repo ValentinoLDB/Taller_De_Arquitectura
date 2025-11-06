@@ -1,0 +1,11 @@
+[Version]
+Version=15.0
+[Designs]
+tp3=.\TP3\TP3.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+[Expand]
+tp3=1

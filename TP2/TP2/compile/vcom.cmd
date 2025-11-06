@@ -1,0 +1,1 @@
+-w -d D:/My_Designs/TP2/TP2/compile -s D:/My_Designs/TP2/library.cfg -j D:/My_Designs/TP2/TP2/projlib.cfg -work TP2 -O3 -e 100 -work TP2 -2002 D:/My_Designs/TP2/TP2/src/Test_DFFB.vhd 

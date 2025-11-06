@@ -1,0 +1,1 @@
+-w -d d:/My_Designs/TP5/TP5/compile -s d:/My_Designs/TP5/library.cfg -j d:/My_Designs/TP5/TP5/projlib.cfg -work TP5 -O3 -e 100 -work TP5 -2002 d:/My_Designs/TP5/TP5/src/fulladder.vhd d:/My_Designs/TP5/TP5/src/Adder8.vhd d:/My_Designs/TP5/TP5/src/Test_Adder8.vhd 

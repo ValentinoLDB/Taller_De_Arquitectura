@@ -1,0 +1,1 @@
+-w -d d:/My_Designs/TP4/TP4/compile -s d:/My_Designs/TP4/library.cfg -j d:/My_Designs/TP4/TP4/projlib.cfg -work TP4 -O3 -e 100 -work TP4 -2002 d:/My_Designs/TP4/TP4/src/fulladder.vhd d:/My_Designs/TP4/TP4/src/test_sumador.vhd 

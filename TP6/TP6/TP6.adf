@@ -1,0 +1,30 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=TP6
+[Library]
+TP6=.\TP6\TP6.lib
+[$LibMap$]
+TP6=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/ShiftN.vhd=-1
+/Test_ShiftN.vhd=-1
+/Test_ShiiftN_B.vhd=-1
+[Files.Data]
+.\src\ShiftN.vhd=VHDL Source Code
+.\src\Test_ShiftN.vhd=VHDL Source Code
+.\src\Test_ShiiftN_B.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=test_shiftn|driver|0 test_shiftn_b|driver_b|0
+ShowHide=ShowTopLevel
+Selected=

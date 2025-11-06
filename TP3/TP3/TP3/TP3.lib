@@ -1,0 +1,47 @@
+timestamp=1758164121750
+
+[~A]
+ModifyID=26
+Version=74
+
+[~MFT]
+0=8|0TP3.mgf|16268|12615
+1=2|1TP3.mgf|38875|34821
+3=2|3TP3.mgf|687|0
+
+[dff]
+A/flujodedatos=21|../src/DFF.vhd|6|1*0
+BinW64/flujodedatos=3*0
+I=0*429
+I/flujodedatos=0*985
+M=11|2|vf5|1758146645564|../src/DFF.vhd|0*160*0xe3c7ca1ac17794ee940b97753334921a5fd16fc6|0*358*0x23b75c12e3e89f2ef000564498faa8c2
+M/flujodedatos=21|2|vf5|1758146645569|../src/DFF.vhd|0*461*0xbbf3dc61db52c1f62adc47f5e74162123b10ddb1|0*898*0x20116f55b147878295aeff36dce7fc50
+R=../src/DFF.vhd|1
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|6a4f0a87167aa7fed99534ff2dffab1b2ab43c52a680ae16f13c5bad6c31f0f5
+Version/flujodedatos=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|b6c657ab91d3e72213c5c83c3cc2368d331f6b62d737ef51cea485cb85bd1fac77c5034e10759393628808bacd208f24
+
+[latch8]
+A/estructura=A/Estructura 21|../src/Latch8.vhd|5|1*4054
+I=0*1486
+I/estructura=I/Estructura 0*2373
+M=11|2|vf5|1758146708774|../src/Latch8.vhd|0*1197*0xe4da79324b103d0d1b9c97e88af284bd29db5b61|0*1409*0x23b75c12e3e89f2ef000564498faa8c2
+M/estructura=M/Estructura 21|2|vf5|1758146725971|../src/Latch8.vhd|0*1521*0x5d2791e0c1ef6ddc0c4de0b6e5747ef73f52c2c3|0*2282*0x20116f55b147878295aeff36dce7fc50
+R=../src/Latch8.vhd|1
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|27f046fe62dd8a7ed601b8f746b5ee8e0c18627b1095cfc83a292a4813ec851f
+Version/estructura=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|2d177f6b2fe9ee4fd7e76f310b6783c9eb2bd86ac3a62c450d1faeb1931ac6a9d824d4cba881999a9486ebd9c4866f73
+
+[test_latch8]
+A/driver=A/Driver 21|../src/Test_Latch8.vhd|3|1*38875
+BinW64/driver=3*687
+I=0*2866
+I/driver=I/Driver 0*16268
+M=11|2|vf5|1758146804179|../src/Test_Latch8.vhd|0*2657*0x6fd65f3c73c92228ae1cd201791ab6cd658bc3ee|0*2779*0x23b75c12e3e89f2ef000564498faa8c2
+M/driver=M/Driver 21|2|vf5|1758164121717|../src/Test_Latch8.vhd|0*15521*0x5d2cbad97bcbe62aaffc5238fa57d6199d227359|0*16171*0x20116f55b147878295aeff36dce7fc50
+R=../src/Test_Latch8.vhd|1
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|59f4befc6e9bfb0062518a0073c808abd5b7f9468bfcfd51db645999bcdc9b98ac814d02e634603563bfc7bb2ec96a2c
+Version/driver=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|32a8809e0c82d5e52151c5a0d1b53825ddfdcb0c3fd0e54d2cdeb2f5bd87550c
+
+[~U]
+dff=DFF 11|0*0|
+latch8=Latch8 11|0*1030|
+test_latch8=Test_Latch8 11|0*2529|

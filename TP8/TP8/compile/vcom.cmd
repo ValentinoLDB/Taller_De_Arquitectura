@@ -1,0 +1,1 @@
+-w -d d:/My_Designs/TP8/TP8/compile -s d:/My_Designs/TP8/library.cfg -j d:/My_Designs/TP8/TP8/projlib.cfg -work TP8 -reorder -O3 -e 100 -work TP8 -2002 d:/My_Designs/TP8/TP8/src/Utils.vhd d:/My_Designs/TP8/TP8/src/Test_Utils.vhd 
