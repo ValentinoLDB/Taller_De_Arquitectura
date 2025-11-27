@@ -937,10 +937,26 @@ begin
 						exit;
 					end if;
 				end loop; 
-				--indice := indice + 1;
+				-- indice may now point to either '(' (if a named variable matched)
+				-- or to a numeric literal (e.g. 4(sp)). Allow numeric offsets too.
 				if (not match) then
-					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando no hace referencia al nombre de ninguna variable v�lida declarada"
-					severity FAILURE;
+					if (isNumber(cadena(indice))) then
+						-- parse decimal immediate offset
+						addrInm := 0;
+						while (isNumber(cadena(indice))) loop
+							for d in DIGITS_DEC'range loop
+								if (cadena(indice) = DIGITS_DEC(d)) then
+									addrInm := addrInm * 10 + (d - 1);
+									exit;
+								end if;
+							end loop;
+							indice := indice + 1;
+						end loop;
+						match := true; -- numeric immediate accepted as addrInm
+					else
+						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando no hace referencia al nombre de ninguna variable v�lida declarada"
+						severity FAILURE;
+					end if;
 				end if;
 				if (cadena(indice) /= '(') then
 					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
