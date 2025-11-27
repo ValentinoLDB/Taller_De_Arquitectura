@@ -39,11 +39,11 @@ ES_IMPAR:	pushh r5
 	sh r10, MENOR(r0)
 	daddi r11, r0, 1
 	sh r11, 4(sp)
-VACIA_PILA:	poph r12
+VACIA_PILA:	poph r1
 	daddi sp, sp, 2
-	poph r13
+	poph r2
 	daddi sp, sp, 2
-	poph r14
+	poph r3
 	daddi sp, sp, 2
 fin:	halt
 	halt

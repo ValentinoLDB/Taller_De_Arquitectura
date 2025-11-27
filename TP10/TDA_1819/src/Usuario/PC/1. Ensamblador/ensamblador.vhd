@@ -1208,30 +1208,48 @@ begin
 				indice := indice + 1;
 			end loop;
 			if ((INSTAR_NAME(4) /= 'f') and (INSTAR_NAME(3) /= 'f')) then
-				if (cadena(indice) /= 'r') then
-					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
-					severity FAILURE;
+				-- allow 'sp' as a valid register identifier for integer registers
+				if ((cadena(indice) = 's') and (cadena(indice+1) = 'p')) then
+					numReg1 := 37; -- ID_SP
+					indice := indice + 2; -- skip 's' and 'p'
+				else
+					if (cadena(indice) /= 'r') then
+						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
+						severity FAILURE;
+					end if;
+					numReg1 := 0;
+					indice := indice + 1;
+					if (not isNumber(cadena(indice))) then
+						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
+						severity FAILURE;
+					end if;
+					for j in DIGITS_DEC'range loop
+						if (cadena(indice) = DIGITS_DEC(j)) then
+							numReg1 := numReg1 + j-1;
+							exit;
+						end if;
+					end loop;
+					indice := indice + 1;
 				end if;
-				numReg1 := 0;
 			else
 				if (cadena(indice) /= 'f') then
 					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
 					severity FAILURE;
 				end if;
 				numReg1 := CANT_REGISTROS;
-			end if;
-			indice := indice + 1;
-			if (not isNumber(cadena(indice))) then
-				report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
-				severity FAILURE;
-			end if;
-			for j in DIGITS_DEC'range loop
-				if (cadena(indice) = DIGITS_DEC(j)) then
-					numReg1 := numReg1 + j-1;
-					exit;
+				indice := indice + 1;
+				if (not isNumber(cadena(indice))) then
+					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
+					severity FAILURE;
 				end if;
-			end loop;
-			indice := indice + 1;
+				for j in DIGITS_DEC'range loop
+					if (cadena(indice) = DIGITS_DEC(j)) then
+						numReg1 := numReg1 + j-1;
+						exit;
+					end if;
+				end loop;
+				indice := indice + 1;
+			end if;
 			if (cadena(indice) /= ',') then
 				if (cadena(indice-1) /= '1') then
 					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
@@ -1266,30 +1284,48 @@ begin
 			end if;
 			indice := indice + 1;  
 			if ((INSTAR_NAME(4) /= 'f') and (INSTAR_NAME(3) /= 'f')) then
-				if (cadena(indice) /= 'r') then
-					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
-					severity FAILURE;
+				-- allow 'sp' as a valid register identifier for integer registers
+				if ((cadena(indice) = 's') and (cadena(indice+1) = 'p')) then
+					numReg2 := 37; -- ID_SP
+					indice := indice + 2; -- skip 's' and 'p'
+				else
+					if (cadena(indice) /= 'r') then
+						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
+						severity FAILURE;
+					end if;
+					numReg2 := 0;
+					indice := indice + 1;
+					if (not isNumber(cadena(indice))) then
+						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
+						severity FAILURE;
+					end if;
+					for j in DIGITS_DEC'range loop
+						if (cadena(indice) = DIGITS_DEC(j)) then
+							numReg2 := numReg2 + j-1;
+							exit;
+						end if;
+					end loop;
+					indice := indice + 1;
 				end if;
-				numReg2 := 0;
 			else
 				if (cadena(indice) /= 'f') then	 
 					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
 					severity FAILURE;
 				end if;
 				numReg2 := CANT_REGISTROS;
-			end if;
-			indice := indice + 1;
-			if (not isNumber(cadena(indice))) then
-				report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
-				severity FAILURE;
-			end if;
-			for j in DIGITS_DEC'range loop
-				if (cadena(indice) = DIGITS_DEC(j)) then
-					numReg2 := numReg2 + j-1;
-					exit;
+				indice := indice + 1;
+				if (not isNumber(cadena(indice))) then
+					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
+					severity FAILURE;
 				end if;
-			end loop;
-			indice := indice + 1; 
+				for j in DIGITS_DEC'range loop
+					if (cadena(indice) = DIGITS_DEC(j)) then
+						numReg2 := numReg2 + j-1;
+						exit;
+					end if;
+				end loop;
+				indice := indice + 1; 
+			end if;
 			if (INSTAR_SIZE /= 4) then
 				if (cadena(indice) /= ',') then
 					if (cadena(indice-1) /= '1') then
