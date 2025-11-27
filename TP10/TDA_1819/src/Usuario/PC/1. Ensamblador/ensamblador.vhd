@@ -944,22 +944,28 @@ begin
 					severity FAILURE;
 				end if;
 				indice := indice + 1;
-				if (cadena(indice) /= 'r') then
-					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
-					severity FAILURE;
-				end if;
-				indice := indice + 1;
-				if (not isNumber(cadena(indice))) then
-					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
-					severity FAILURE;
-				end if;
-				for j in DIGITS_DEC'range loop
-					if (cadena(indice) = DIGITS_DEC(j)) then
-						addrReg := j-1;
-						exit;
+				-- Allow "sp" as stack pointer inside parentheses
+				if ((cadena(indice) = 's') and (cadena(indice+1) = 'p')) then
+					addrReg := 37; -- ID_SP
+					indice := indice + 2;
+				else
+					if (cadena(indice) /= 'r') then
+						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
+						severity FAILURE;
 					end if;
-				end loop;
-				indice := indice + 1;
+					indice := indice + 1;
+					if (not isNumber(cadena(indice))) then
+						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
+						severity FAILURE;
+					end if;
+					for j in DIGITS_DEC'range loop
+						if (cadena(indice) = DIGITS_DEC(j)) then
+							addrReg := j-1;
+							exit;
+						end if;
+					end loop;
+					indice := indice + 1;
+				end if;
 				if (cadena(indice) /= ')') then
 					if (cadena(indice-1) /= '1') then
 						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
