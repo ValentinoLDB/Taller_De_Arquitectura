@@ -859,7 +859,7 @@ begin
 			while (cadena(indice) = ' ') loop
 				indice := indice + 1;
 			end loop;
-			if (((INSTTD_SIZE = 6) and (INSTTD_NAME(2) /= 'f')) or (INSTTD_NAME = "mrf")) then
+			if (((INSTTD_SIZE = 6) and (INSTTD_NAME(2) /= 'f')) or (INSTTD_NAME = "mrf") or (INSTTD_SIZE = 3)) then
 				if (cadena(indice) /= 'r') then
 					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
 					severity FAILURE;
@@ -884,34 +884,37 @@ begin
 				end if;
 			end loop;
 			indice := indice + 1;
-			if (cadena(indice) /= ',') then
-				if (cadena(indice-1) /= '1') then
+			-- If instruction size = 3, there is only one register operand (no comma/second operand)
+			if (INSTTD_SIZE /= 3) then
+				if (cadena(indice) /= ',') then
+					if (cadena(indice-1) /= '1') then
+						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
+						severity FAILURE;
+					end if;
+					case cadena(indice) is
+						when '0' to '5' =>
+							for j in DIGITS_DEC'range loop
+								if (cadena(indice) = DIGITS_DEC(j)) then
+									if (cadena(indice-2) = 'r') then
+										numReg1 := 10 + j-1;
+									else
+										numReg1 := CANT_REGISTROS + 10 + j-1; 
+									end if;
+									exit;
+								end if;
+							end loop;
+							indice := indice + 1;
+						when others =>
+							report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
+							severity FAILURE;
+					end case;
+				end if;
+				if (cadena(indice) /= ',') then
 					report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
 					severity FAILURE;
 				end if;
-				case cadena(indice) is
-					when '0' to '5' =>
-						for j in DIGITS_DEC'range loop
-							if (cadena(indice) = DIGITS_DEC(j)) then
-								if (cadena(indice-2) = 'r') then
-									numReg1 := 10 + j-1;
-								else
-									numReg1 := CANT_REGISTROS + 10 + j-1; 
-								end if;
-								exit;
-							end if;
-						end loop;
-						indice := indice + 1;
-					when others =>
-						report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
-						severity FAILURE;
-				end case;
+				indice := indice + 1;
 			end if;
-			if (cadena(indice) /= ',') then
-				report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el primer operando se encuentra incorrectamente declarado"
-				severity FAILURE;
-			end if;
-			indice := indice + 1;
 			if (cadena(indice) /= ' ') then
 				report "Error en la l�nea " & integer'image(num_linea) & " del programa '" & trim(nombre) & "': el segundo operando se encuentra incorrectamente declarado"
 				severity FAILURE;	

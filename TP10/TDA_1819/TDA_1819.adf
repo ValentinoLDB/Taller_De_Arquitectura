@@ -32,6 +32,7 @@ RetvalMemorySize=32
 StackMemorySize=32
 resolution=1 ns
 VsimAdditionalOptions=
+FUNC_LIB=TDA_1819
 [LocalVerilogSets]
 EnableSLP=1
 EnableDebug=0
@@ -83,7 +84,7 @@ Usuario\PC\4. Memoria=1
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=usuario|usuario_architecture|0
 ShowHide=ShowTopLevel
 Selected=
 [Files]
