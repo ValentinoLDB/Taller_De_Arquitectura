@@ -40,7 +40,7 @@ entity usuario is
 	-- Generic declarations of the tested unit
 	generic (
 		ProgName	: STRING := "programa_tp10.asm";
-		Pipelining	: BOOLEAN := true;
+		Pipelining	: BOOLEAN := false;
 		Cores 		: INTEGER := 1);  	
 			
 end usuario;

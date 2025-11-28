@@ -2,9 +2,11 @@
 VAR_A:	.hword	3530
 VAR_B:	.hword	5313
 SUMA:	.hword	0
-MAYOR:	.hword	0
 MENOR:	.hword	0
+MAYOR:	.hword	0
 	.code
+	daddi r1, r0, 6000
+	dadd sp, r0, r1
 	lh r1, VAR_A(r0)
 	lh r2, VAR_B(r0)
 	slt r3, r1, r2
@@ -26,8 +28,8 @@ ES_PAR:	pushh r4
 	sh r9, MAYOR(r0)
 	lh r10, 0(sp)
 	sh r10, MENOR(r0)
-	daddi r11, r0, 0
-	sh r11, 4(sp)
+	daddi r7, r0, 0
+	sh r7, 4(sp)
 	jmp VACIA_PILA
 ES_IMPAR:	pushh r5
 	pushh r4
@@ -37,13 +39,13 @@ ES_IMPAR:	pushh r5
 	sh r9, MAYOR(r0)
 	lh r10, 2(sp)
 	sh r10, MENOR(r0)
-	daddi r11, r0, 1
-	sh r11, 4(sp)
-VACIA_PILA:	poph r1
+	daddi r7, r0, 1
+	sh r7, 4(sp)
+VACIA_PILA:	poph r4
 	daddi sp, sp, 2
-	poph r2
+	poph r5
 	daddi sp, sp, 2
-	poph r3
+	poph r7
 	daddi sp, sp, 2
 fin:	halt
 	halt
