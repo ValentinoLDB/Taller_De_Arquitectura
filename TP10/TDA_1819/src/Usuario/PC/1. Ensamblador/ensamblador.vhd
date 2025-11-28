@@ -936,12 +936,9 @@ begin
 						indice := indice + variables(j).namelength;
 						exit;
 					end if;
-				end loop; 
-				-- indice may now point to either '(' (if a named variable matched)
-				-- or to a numeric literal (e.g. 4(sp)). Allow numeric offsets too.
+				end loop;
 				if (not match) then
 					if (isNumber(cadena(indice))) then
-						-- parse decimal immediate offset
 						addrInm := 0;
 						while (isNumber(cadena(indice))) loop
 							for d in DIGITS_DEC'range loop
@@ -963,7 +960,6 @@ begin
 					severity FAILURE;
 				end if;
 				indice := indice + 1;
-				-- Allow "sp" as stack pointer inside parentheses
 				if ((cadena(indice) = 's') and (cadena(indice+1) = 'p')) then
 					addrReg := 37; -- ID_SP
 					indice := indice + 2;
@@ -1208,7 +1204,6 @@ begin
 				indice := indice + 1;
 			end loop;
 			if ((INSTAR_NAME(4) /= 'f') and (INSTAR_NAME(3) /= 'f')) then
-				-- allow 'sp' as a valid register identifier for integer registers
 				if ((cadena(indice) = 's') and (cadena(indice+1) = 'p')) then
 					numReg1 := 37; -- ID_SP
 					indice := indice + 2; -- skip 's' and 'p'

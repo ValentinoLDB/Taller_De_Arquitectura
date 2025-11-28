@@ -243,7 +243,6 @@ begin
 					for i in SizeBits-1 downto 0 loop
 						DataRegInWB(i) <= RecInWBAct.data.memaccess(i);
 					end loop;
-					-- Sign-extend half-word memory reads into 32-bit register value
 					if (SizeBits = 16) then
 						if (RecInWBAct.data.memaccess(15) = '1') then
 							for i in 31 downto 16 loop

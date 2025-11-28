@@ -395,7 +395,6 @@ begin
 			WAIT FOR 1 ns;
 			IDtoMA.data.decode(15 downto 0) <= DataRegOutID(15 downto 0);
 			if (StallRAW = '0') then
-				-- obtain SP and decrement by 2 to get push address
 				IdRegID <= std_logic_vector(to_unsigned(ID_SP, IdRegID'length));
 				SizeRegID <= std_logic_vector(to_unsigned(2, SizeRegID'length));
 				EnableRegID <= '1';
@@ -404,7 +403,6 @@ begin
 				WAIT FOR 1 ns;
 				addrAux := to_integer(unsigned(DataRegOutID(15 downto 0))) - 2;
 				IDtoMA.address <= std_logic_vector(to_unsigned(addrAux, IDtoMA.address'length));
-				-- prepare writeback to update SP (value originates in Decode)
 				rdAux := ID_SP + 1;
 				IDtoWB.datasize <= std_logic_vector(to_unsigned(4, IDtoWB.datasize'length));
 				IDtoWB.source <= std_logic_vector(to_unsigned(WB_ID, IDtoWB.source'length));
@@ -412,8 +410,6 @@ begin
 				IDtoWB.data.decode <= X"0000" & std_logic_vector(to_unsigned(addrAux, 16));
 			end if;
 		WHEN POPH =>
-			-- Partial POPH: read a half-word from stack and write sign-extended
-			-- value into destination register. Do NOT update SP (single WB port).
 			IDtoMA.mode <= std_logic_vector(to_unsigned(MEM_MEM, IDtoMA.mode'length));
 			IDtoMA.read <= '1';
 			IDtoMA.datasize <= std_logic_vector(to_unsigned(2, IDtoMA.datasize'length));
@@ -421,7 +417,6 @@ begin
 			IDtoWB.source <= std_logic_vector(to_unsigned(WB_MEM, IDtoWB.source'length));
 			rdAux := to_integer(unsigned(IFtoIDLocal.package1(7 downto 0))) + 1;
 			IDtoWB.mode <= std_logic_vector(to_unsigned(rdAux, IDtoWB.mode'length));
-			-- obtain SP and use it as pop address (no SP update here)
 			IdRegID <= std_logic_vector(to_unsigned(ID_SP, IdRegID'length));
 			SizeRegID <= std_logic_vector(to_unsigned(2, SizeRegID'length));
 			EnableRegID <= '1';
